@@ -1,0 +1,8 @@
+22:13:36.760 [main] INFO  resources.base - Driver is initialized
+22:29:04.270 [main] INFO  resources.base - Driver is initialized
+22:29:33.252 [main] INFO  resources.base - Navigated to validateEducation page
+22:30:09.999 [main] INFO  resources.base - Successfully created education
+22:30:09.999 [main] INFO  resources.base - Test Completed
+22:33:06.929 [main] INFO  resources.base - Driver is initialized
+22:33:15.034 [main] INFO  resources.base - Navigated to validateTitle page
+22:33:15.362 [main] INFO  resources.base - Successfully validated Text message

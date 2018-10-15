@@ -1,0 +1,8 @@
+09:00:06.620 [main] INFO  resources.base - Successfully validated Text message
+09:00:06.656 [main] INFO  resources.base - Test Completed
+16:21:22.284 [main] INFO  resources.base - Driver is initialized
+16:21:30.082 [main] INFO  resources.base - Navigated to validateTitle page
+16:21:30.183 [main] INFO  resources.base - Successfully validated Text message
+16:21:30.183 [main] INFO  resources.base - Test Completed
+17:03:54.697 [main] INFO  resources.base - Driver is initialized
+17:04:02.556 [main] INFO  resources.base - Navigated to validateTitle page

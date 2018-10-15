@@ -1,15 +1,12 @@
 package StudyAbroad;
 
 import java.io.IOException;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import junit.framework.Assert;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import resources.base;
@@ -35,7 +32,7 @@ public class HomePage extends base{
 		LandingPage l=new LandingPage(driver);
 		l.getprofilepic().click();
 	    l.getSignin().click();
-	    LoginPage lp=new LoginPage(driver);
+	   	    LoginPage lp=new LoginPage(driver);
 	    lp.getusername().sendKeys(Username);
 	    lp.getpassword().sendKeys( Password);
 	  //  System.out.println(Text);
@@ -57,22 +54,13 @@ public class HomePage extends base{
 	public Object[][] getData() {
 		
 		Object[][] data=new Object[2][3];
-//		data[0][0]="nonrestricteduser@qw.com";
-//		data[0][1]="123456";
-//		data[0][2]="Restrcited User";
-//		
-//		data[1][0]="restricteduser@qw.com";
-//		data[1][1]="456788";
-//		data[1][2]= "Non restricted user";
+		data[0][0]="nonrestricteduser@qw.com";
+		data[0][1]="123456";
+		data[0][2]="Restrcited User";
 		
-		
-		data[0][0]="admin@sm.in";
-		data[0][1]="sm123";
-		data[0][2]="NON Restrcited User";
-		
-		data[1][0]="admin1@sm.in";
+		data[1][0]="restricteduser@qw.com";
 		data[1][1]="456788";
-		data[1][2]= "restricted user";
+		data[1][2]= "Non restricted user";
 		return data;
 	}
 }

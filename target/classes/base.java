@@ -14,6 +14,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import pageObjects.LandingPage;
+import pageObjects.LoginPage;
+
 public class base {
 	public static WebDriver driver;
 	public Properties prop;
@@ -43,13 +46,24 @@ public class base {
 	{
 //		IE code
 	}
-
-	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+    driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	return driver;
 
 
 	}
 	
+	public void longinTest() throws InterruptedException {
+		LandingPage l=new LandingPage(driver);
+		l.getprofilepic().click();
+		Thread.sleep(2000);
+	    l.getSignin().click();
+	    Thread.sleep(2000);
+	   	LoginPage lp=new LoginPage(driver);
+	    lp.getusername().sendKeys("admin@sm.in");
+	    lp.getpassword().sendKeys("sm1234");
+	    lp.getlogin().click();
+	}
 	public void getScreenshot(String result) throws IOException
 	{
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
