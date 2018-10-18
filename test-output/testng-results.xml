@@ -1,201 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="50457" started-at="2018-10-15T17:02:27Z" finished-at="2018-10-15T17:03:17Z">
+  <suite name="Suite" duration-ms="83847" started-at="2018-10-16T15:07:59Z" finished-at="2018-10-16T15:09:23Z">
     <groups>
     </groups>
-    <test name="Validating User login" duration-ms="33409" started-at="2018-10-15T17:02:27Z" finished-at="2018-10-15T17:03:00Z">
-      <class name="StudyAbroad.HomePage">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.HomePage@2beee7ff]" name="initialize" is-config="true" duration-ms="11132" started-at="2018-10-15T17:02:27Z" finished-at="2018-10-15T17:02:38Z">
+    <test name="Education " duration-ms="58301" started-at="2018-10-16T15:07:59Z" finished-at="2018-10-16T15:08:57Z">
+      <class name="StudyAbroad.Education">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.Education@4e268090]" name="initialize" is-config="true" duration-ms="16535" started-at="2018-10-16T15:07:59Z" finished-at="2018-10-16T15:08:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:StudyAbroad.HomePage@2beee7ff]" name="basePageNavigation" duration-ms="14541" started-at="2018-10-15T17:02:38Z" data-provider="getData" finished-at="2018-10-15T17:02:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restrcited User]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <a id="sm-signin" data-method="get" href="http://app.santa-monica-beta.tmzb2q34ip.ap-south-1.elasticbeanstalk.com/users/sign_in">...</a> is not clickable at point (174, 328). Other element would receive the click: <ul class="dropdown-user">...</ul>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 121 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-J2S5NQC', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50172}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\Aswathy\AppData\Local\Temp\scoped_dir9600_9112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c99b8e8b9add83fdbf54c41396b0f154]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <a id="sm-signin" data-method="get" href="http://app.santa-monica-beta.tmzb2q34ip.ap-south-1.elasticbeanstalk.com/users/sign_in">...</a> is not clickable at point (174, 328). Other element would receive the click: <ul class="dropdown-user">...</ul>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 121 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-J2S5NQC', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50172}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\Aswathy\AppData\Local\Temp\scoped_dir9600_9112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c99b8e8b9add83fdbf54c41396b0f154
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at StudyAbroad.HomePage.basePageNavigation(HomePage.java:34)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="CreateEducation()[pri:0, instance:StudyAbroad.Education@4e268090]" name="CreateEducation" duration-ms="26486" started-at="2018-10-16T15:08:16Z" finished-at="2018-10-16T15:08:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="FAIL" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:StudyAbroad.HomePage@2beee7ff]" name="basePageNavigation" duration-ms="3486" started-at="2018-10-15T17:02:54Z" data-provider="getData" finished-at="2018-10-15T17:02:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricteduser@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[456788]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Non restricted user]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: Element <a id="sm-signin" data-method="get" href="http://app.santa-monica-beta.tmzb2q34ip.ap-south-1.elasticbeanstalk.com/users/sign_in">...</a> is not clickable at point (201, 269). Other element would receive the click: <a href="#">...</a>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 71 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-J2S5NQC', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50172}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\Aswathy\AppData\Local\Temp\scoped_dir9600_9112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c99b8e8b9add83fdbf54c41396b0f154]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <a id="sm-signin" data-method="get" href="http://app.santa-monica-beta.tmzb2q34ip.ap-south-1.elasticbeanstalk.com/users/sign_in">...</a> is not clickable at point (201, 269). Other element would receive the click: <a href="#">...</a>
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 71 milliseconds
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'DESKTOP-J2S5NQC', ip: '192.168.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50172}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\Aswathy\AppData\Local\Temp\scoped_dir9600_9112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c99b8e8b9add83fdbf54c41396b0f154
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at StudyAbroad.HomePage.basePageNavigation(HomePage.java:34)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- CreateEducation -->
+        <test-method status="PASS" signature="editeducation()[pri:0, instance:StudyAbroad.Education@4e268090]" name="editeducation" duration-ms="8650" started-at="2018-10-16T15:08:42Z" finished-at="2018-10-16T15:08:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:StudyAbroad.HomePage@2beee7ff]" name="teardown" is-config="true" duration-ms="2640" started-at="2018-10-15T17:02:58Z" finished-at="2018-10-15T17:03:00Z">
+        </test-method> <!-- editeducation -->
+        <test-method status="PASS" signature="deleteeducation()[pri:0, instance:StudyAbroad.Education@4e268090]" name="deleteeducation" duration-ms="6301" started-at="2018-10-16T15:08:51Z" depends-on-methods="StudyAbroad.Education.editeducation" finished-at="2018-10-16T15:08:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- StudyAbroad.HomePage -->
-    </test> <!-- Validating User login -->
-    <test name="Validating title in the Page" duration-ms="16463" started-at="2018-10-15T17:03:01Z" finished-at="2018-10-15T17:03:17Z">
+        </test-method> <!-- deleteeducation -->
+      </class> <!-- StudyAbroad.Education -->
+    </test> <!-- Education  -->
+    <test name="Validating title in the Page" duration-ms="24404" started-at="2018-10-16T15:08:58Z" finished-at="2018-10-16T15:09:22Z">
       <class name="StudyAbroad.validatetitle">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="initialize" is-config="true" duration-ms="13724" started-at="2018-10-15T17:03:01Z" finished-at="2018-10-15T17:03:15Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="initialize" is-config="true" duration-ms="17429" started-at="2018-10-16T15:08:58Z" finished-at="2018-10-16T15:09:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="validateAppTitle" duration-ms="352" started-at="2018-10-15T17:03:15Z" finished-at="2018-10-15T17:03:15Z">
+        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="validateAppTitle" duration-ms="59" started-at="2018-10-16T15:09:16Z" finished-at="2018-10-16T15:09:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAppTitle -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="teardown" is-config="true" duration-ms="2384" started-at="2018-10-15T17:03:15Z" finished-at="2018-10-15T17:03:17Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="teardown" is-config="true" duration-ms="6911" started-at="2018-10-16T15:09:16Z" finished-at="2018-10-16T15:09:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- StudyAbroad.validatetitle -->
     </test> <!-- Validating title in the Page -->
-    <test name="App Testing" duration-ms="0" started-at="2018-10-15T17:03:17Z" finished-at="2018-10-15T17:03:17Z">
+    <test name="App Testing" duration-ms="0" started-at="2018-10-16T15:09:23Z" finished-at="2018-10-16T15:09:23Z">
     </test> <!-- App Testing -->
   </suite> <!-- Suite -->
 </testng-results>

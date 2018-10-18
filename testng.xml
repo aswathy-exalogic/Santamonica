@@ -10,9 +10,9 @@
  </listeners>
   
  
-  <test name="Validating User login">
+  <test name="Education ">
     <classes>
-      <class name="StudyAbroad.HomePage"/>
+      <class name="StudyAbroad.Education"/>
           </classes>
       </test>
       

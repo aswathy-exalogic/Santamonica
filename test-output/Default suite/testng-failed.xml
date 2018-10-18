@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="StudyAbroad.Education">
+      <class name="StudyAbroad.Course">
         <methods>
-          <include name="deleteeducation"/>
-          <include name="CreateEducation"/>
+          <include name="CreateCourse"/>
           <include name="initialize"/>
-          <include name="editeducation"/>
         </methods>
-      </class> <!-- StudyAbroad.Education -->
+      </class> <!-- StudyAbroad.Course -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

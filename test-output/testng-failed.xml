@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="StudyAbroad.listeners"/>
-    <listener class-name="resources.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Validating User login(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="StudyAbroad.HomePage">
+      <class name="StudyAbroad.Course">
         <methods>
-          <include name="teardown"/>
+          <include name="CreateCourse"/>
           <include name="initialize"/>
-          <include name="basePageNavigation" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- StudyAbroad.HomePage -->
+      </class> <!-- StudyAbroad.Course -->
     </classes>
-  </test> <!-- Validating User login(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

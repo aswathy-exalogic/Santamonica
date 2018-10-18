@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="StudyAbroad.HomePage" hash-for-method="basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)">basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="StudyAbroad.HomePage" hash-for-method="basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)">basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +100,21 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="StudyAbroad.Education" hash-for-method="CreateEducation">CreateEducation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="StudyAbroad.Education" hash-for-method="deleteeducation">deleteeducation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="StudyAbroad.Education" hash-for-method="editeducation">editeducation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="StudyAbroad.validatetitle" hash-for-method="validateAppTitle">validateAppTitle</a> <!-- method navigator-link -->
@@ -136,64 +132,35 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">StudyAbroad.HomePage</span>
+              <img src="passed.png"/>
+              <span class="class-name">StudyAbroad.Education</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)">
-                  </a> <!-- basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(nonrestricteduser@qw.com, 123456, Restrcited User)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a id=&quot;sm-signin&quot; data-method=&quot;get&quot; href=&quot;http://app.santa-monica-beta.tmzb2q34ip.ap-south-1.elasticbeanstalk.com/users/sign_in&quot;&gt;...&lt;/a&gt; is not clickable at point (174, 328). Other element would receive the click: &lt;ul class=&quot;dropdown-user&quot;&gt;...&lt;/ul&gt;
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 121 milliseconds
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;DESKTOP-J2S5NQC&apos;, ip: &apos;192.168.0.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50172}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\Aswathy\AppData\Local\Temp\scoped_dir9600_9112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c99b8e8b9add83fdbf54c41396b0f154
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at StudyAbroad.HomePage.basePageNavigation(HomePage.java:34)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="CreateEducation">
+                  </a> <!-- CreateEducation -->
+                  <span class="method-name">CreateEducation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)">
-                  </a> <!-- basePageNavigation(restricteduser@qw.com, 456788, Non restricted user) -->
-                  <span class="method-name">basePageNavigation</span>
-                  <span class="parameters">(restricteduser@qw.com, 456788, Non restricted user)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a id=&quot;sm-signin&quot; data-method=&quot;get&quot; href=&quot;http://app.santa-monica-beta.tmzb2q34ip.ap-south-1.elasticbeanstalk.com/users/sign_in&quot;&gt;...&lt;/a&gt; is not clickable at point (201, 269). Other element would receive the click: &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 71 milliseconds
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;DESKTOP-J2S5NQC&apos;, ip: &apos;192.168.0.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50172}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e), userDataDir=C:\Users\Aswathy\AppData\Local\Temp\scoped_dir9600_9112}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c99b8e8b9add83fdbf54c41396b0f154
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-	at StudyAbroad.HomePage.basePageNavigation(HomePage.java:34)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
+                  <a name="deleteeducation">
+                  </a> <!-- deleteeducation -->
+                  <span class="method-name">deleteeducation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editeducation">
+                  </a> <!-- editeducation -->
+                  <span class="method-name">editeducation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -223,11 +190,11 @@ Session ID: c99b8e8b9add83fdbf54c41396b0f154
     &lt;listener class-name=&quot;StudyAbroad.listeners&quot;/&gt;
     &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validating User login&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Education &quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;StudyAbroad.HomePage&quot;/&gt;
+      &lt;class name=&quot;StudyAbroad.Education&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validating User login --&gt;
+  &lt;/test&gt; &lt;!-- Education  --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Validating title in the Page&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;StudyAbroad.validatetitle&quot;/&gt;
@@ -249,7 +216,7 @@ Session ID: c99b8e8b9add83fdbf54c41396b0f154
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Validating User login (1 class)</span>
+                <span class="test-name">Education  (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Validating title in the Page (1 class)</span>
@@ -281,24 +248,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'basePageNavigation')
-data.setCell(0, 2, 'StudyAbroad.HomePage')
-data.setCell(0, 3, 14541);
+data.setCell(0, 1, 'CreateEducation')
+data.setCell(0, 2, 'StudyAbroad.Education')
+data.setCell(0, 3, 26486);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'basePageNavigation')
-data.setCell(1, 2, 'StudyAbroad.HomePage')
-data.setCell(1, 3, 3486);
+data.setCell(1, 1, 'editeducation')
+data.setCell(1, 2, 'StudyAbroad.Education')
+data.setCell(1, 3, 8650);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateAppTitle')
-data.setCell(2, 2, 'StudyAbroad.validatetitle')
-data.setCell(2, 3, 352);
+data.setCell(2, 1, 'deleteeducation')
+data.setCell(2, 2, 'StudyAbroad.Education')
+data.setCell(2, 3, 6301);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateAppTitle')
+data.setCell(3, 2, 'StudyAbroad.validatetitle')
+data.setCell(3, 3, 59);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -324,41 +295,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">StudyAbroad.HomePage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">StudyAbroad.Education</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">basePageNavigation(nonrestricteduser@qw.com, 123456, Restrcited User)</span>
-                <span class="method-start">11148 ms</span>
+                <span class="method-name">CreateEducation</span>
+                <span class="method-start">16851 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">basePageNavigation(restricteduser@qw.com, 456788, Non restricted user)</span>
-                <span class="method-start">26646 ms</span>
+                <span class="method-name">editeducation</span>
+                <span class="method-start">43337 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">30753 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">deleteeducation</span>
+                <span class="method-start">51996 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">StudyAbroad.validatetitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">33893 ms</span>
+                <span class="method-start">59265 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">validateAppTitle</span>
-                <span class="method-start">47618 ms</span>
+                <span class="method-start">76695 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">47972 ms</span>
+                <span class="method-start">76756 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
