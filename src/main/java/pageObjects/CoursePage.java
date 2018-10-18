@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.AfterTest;
 
 public class CoursePage {
 public WebDriver driver;
@@ -11,6 +12,7 @@ public WebDriver driver;
 	By NewCourse=By.id("course_new");
 	By Selectedudropdown=By.id("course_education_id");
 	By EnteringCourseName=By.id("course_name");
+	By Proficiency=By.xpath("//span[@class='switch']/label[1]/span");
 	By Clickoncourse=By.id("course_create");
 
 	public CoursePage(WebDriver driver) {
@@ -38,7 +40,18 @@ public WebDriver driver;
 	public WebElement getClickoncourse() {
 		return driver.findElement(Clickoncourse);
 	}
-
+	
+	public WebElement getProficiency() {
+		return driver.findElement(Proficiency);
+	}
+	@AfterTest
+	public void teardown()
+	{
+		
+		driver.close();
+		driver=null;
+		
+	}
 	
 }
 

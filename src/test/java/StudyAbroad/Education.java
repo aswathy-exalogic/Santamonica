@@ -28,6 +28,7 @@ public void initialize() throws IOException
 	 driver.get(prop.getProperty("url"));
 	 log.info("Navigated to validateEducation page");
 }
+
 @Test	
 	public void CreateEducation() throws IOException, InterruptedException
 	{
@@ -115,15 +116,16 @@ public void deleteeducation() throws InterruptedException {
 	String expectedText3 = "Education deleted successfully";
   assertEquals(text3,expectedText3);
   log.info("Education deleted Successfully ,toaster msg is shown");
-	Thread.sleep(2000);}
+	Thread.sleep(2000);
+	}
 
-//@AfterTest
-//public void teardown()
-//{
-//	
-//	driver.close();
-//	//driver=null;
-//	
-//}
+@AfterTest
+public void teardown()
+{
+	
+	driver.close();
+	driver=null;
+	
+}
 }
 

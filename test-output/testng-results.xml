@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="83847" started-at="2018-10-16T15:07:59Z" finished-at="2018-10-16T15:09:23Z">
+  <suite name="Suite" duration-ms="139308" started-at="2018-10-18T10:50:27Z" finished-at="2018-10-18T10:52:46Z">
     <groups>
     </groups>
-    <test name="Education " duration-ms="58301" started-at="2018-10-16T15:07:59Z" finished-at="2018-10-16T15:08:57Z">
+    <test name="Education " duration-ms="81674" started-at="2018-10-18T10:50:27Z" finished-at="2018-10-18T10:51:48Z">
       <class name="StudyAbroad.Education">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.Education@4e268090]" name="initialize" is-config="true" duration-ms="16535" started-at="2018-10-16T15:07:59Z" finished-at="2018-10-16T15:08:15Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.Education@1bb266b3]" name="initialize" is-config="true" duration-ms="31226" started-at="2018-10-18T10:50:27Z" finished-at="2018-10-18T10:50:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="CreateEducation()[pri:0, instance:StudyAbroad.Education@4e268090]" name="CreateEducation" duration-ms="26486" started-at="2018-10-16T15:08:16Z" finished-at="2018-10-16T15:08:42Z">
+        <test-method status="PASS" signature="CreateEducation()[pri:0, instance:StudyAbroad.Education@1bb266b3]" name="CreateEducation" duration-ms="33685" started-at="2018-10-18T10:50:58Z" finished-at="2018-10-18T10:51:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateEducation -->
-        <test-method status="PASS" signature="editeducation()[pri:0, instance:StudyAbroad.Education@4e268090]" name="editeducation" duration-ms="8650" started-at="2018-10-16T15:08:42Z" finished-at="2018-10-16T15:08:51Z">
+        <test-method status="PASS" signature="editeducation()[pri:0, instance:StudyAbroad.Education@1bb266b3]" name="editeducation" duration-ms="8934" started-at="2018-10-18T10:51:32Z" finished-at="2018-10-18T10:51:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editeducation -->
-        <test-method status="PASS" signature="deleteeducation()[pri:0, instance:StudyAbroad.Education@4e268090]" name="deleteeducation" duration-ms="6301" started-at="2018-10-16T15:08:51Z" depends-on-methods="StudyAbroad.Education.editeducation" finished-at="2018-10-16T15:08:57Z">
+        <test-method status="PASS" signature="deleteeducation()[pri:0, instance:StudyAbroad.Education@1bb266b3]" name="deleteeducation" duration-ms="6471" started-at="2018-10-18T10:51:41Z" depends-on-methods="StudyAbroad.Education.editeducation" finished-at="2018-10-18T10:51:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteeducation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:StudyAbroad.Education@1bb266b3]" name="teardown" is-config="true" duration-ms="1306" started-at="2018-10-18T10:51:47Z" finished-at="2018-10-18T10:51:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- StudyAbroad.Education -->
     </test> <!-- Education  -->
-    <test name="Validating title in the Page" duration-ms="24404" started-at="2018-10-16T15:08:58Z" finished-at="2018-10-16T15:09:22Z">
-      <class name="StudyAbroad.validatetitle">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="initialize" is-config="true" duration-ms="17429" started-at="2018-10-16T15:08:58Z" finished-at="2018-10-16T15:09:16Z">
+    <test name="Course" duration-ms="44865" started-at="2018-10-18T10:51:50Z" finished-at="2018-10-18T10:52:35Z">
+      <class name="StudyAbroad.Course">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.Course@68c72235]" name="initialize" is-config="true" duration-ms="15175" started-at="2018-10-18T10:51:50Z" finished-at="2018-10-18T10:52:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="validateAppTitle" duration-ms="59" started-at="2018-10-16T15:09:16Z" finished-at="2018-10-16T15:09:16Z">
+        <test-method status="PASS" signature="CreateCourse()[pri:0, instance:StudyAbroad.Course@68c72235]" name="CreateCourse" duration-ms="29687" started-at="2018-10-18T10:52:06Z" finished-at="2018-10-18T10:52:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCourse -->
+      </class> <!-- StudyAbroad.Course -->
+    </test> <!-- Course -->
+    <test name="Validating title in the Page" duration-ms="10520" started-at="2018-10-18T10:52:36Z" finished-at="2018-10-18T10:52:46Z">
+      <class name="StudyAbroad.validatetitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.validatetitle@55536d9e]" name="initialize" is-config="true" duration-ms="9441" started-at="2018-10-18T10:52:36Z" finished-at="2018-10-18T10:52:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateAppTitle()[pri:0, instance:StudyAbroad.validatetitle@55536d9e]" name="validateAppTitle" duration-ms="54" started-at="2018-10-18T10:52:45Z" finished-at="2018-10-18T10:52:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateAppTitle -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:StudyAbroad.validatetitle@68c72235]" name="teardown" is-config="true" duration-ms="6911" started-at="2018-10-16T15:09:16Z" finished-at="2018-10-16T15:09:22Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:StudyAbroad.validatetitle@55536d9e]" name="teardown" is-config="true" duration-ms="1022" started-at="2018-10-18T10:52:45Z" finished-at="2018-10-18T10:52:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- StudyAbroad.validatetitle -->
     </test> <!-- Validating title in the Page -->
-    <test name="App Testing" duration-ms="0" started-at="2018-10-16T15:09:23Z" finished-at="2018-10-16T15:09:23Z">
+    <test name="App Testing" duration-ms="2" started-at="2018-10-18T10:52:46Z" finished-at="2018-10-18T10:52:46Z">
     </test> <!-- App Testing -->
   </suite> <!-- Suite -->
 </testng-results>

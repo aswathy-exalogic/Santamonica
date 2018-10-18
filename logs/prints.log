@@ -1,1 +1,8 @@
-20:39:16.076 [main] INFO  resources.base - Test Completed
+16:21:55.928 [main] INFO  resources.base - Driver is initialized
+16:22:06.145 [main] INFO  resources.base - Navigated to validateEducation page
+16:22:15.457 [main] INFO  resources.base - LoggedIn successfully
+16:22:17.459 [main] INFO  resources.base - Clicking on Setup
+16:22:40.820 [main] INFO  resources.base - Driver is initialized
+16:22:45.441 [main] INFO  resources.base - Navigated to validateTitle page
+16:22:45.497 [main] INFO  resources.base - Successfully validated Text message
+16:22:45.497 [main] INFO  resources.base - Test Completed

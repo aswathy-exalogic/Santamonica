@@ -46,6 +46,9 @@ public class Course extends base{
        Thread.sleep(2000);
        cp.getEnteringCourseName().sendKeys("Testing1");
        Thread.sleep(2000);
+       cp.getProficiency().click();
+       Thread.sleep(2000);
        cp.getClickoncourse().click();
+       Thread.sleep(2000);
 }
 }
