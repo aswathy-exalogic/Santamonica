@@ -20,37 +20,37 @@ import resources.base;
 public class Education extends base{
 	 public static Logger log =LogManager.getLogger(base.class.getName());
 @BeforeTest
-public void initialize() throws IOException
+public void initialize() throws IOException, InterruptedException
 {
 
 	 driver =initilizeDriver();
 	 log.info("Driver is initialized");
 	 driver.get(prop.getProperty("url"));
 	 log.info("Navigated to validateEducation page");
+	 longinTest();
+		log.info("LoggedIn successfully");
+		Thread.sleep(2000);
+		
+	    Menu mn=new Menu(driver);
+	    log.info("Clicking on Setup");
+	    mn.getsetup().click();
+	    Thread.sleep(2000);
+	    
+	    log.info("Clicking on Academic");
+	    mn.getAcademic().click();
+	    Thread.sleep(2000);
+	    
+	   EducationPage ed=new EducationPage(driver);
+	   log.info("Clicking on Education");
+	   ed.getEducation().click();
+	  Thread.sleep(2000);
 }
 
 @Test	
 	public void CreateEducation() throws IOException, InterruptedException
 	{
-	longinTest();
-	log.info("LoggedIn successfully");
-	Thread.sleep(2000);
-	
-    Menu mn=new Menu(driver);
-    log.info("Clicking on Setup");
-    mn.getsetup().click();
-    Thread.sleep(2000);
-    
-    log.info("Clicking on Academic");
-    mn.getAcademic().click();
-    Thread.sleep(2000);
-    
-   EducationPage ed=new EducationPage(driver);
-   log.info("Clicking on Education");
-   ed.getEducation().click();
-  Thread.sleep(2000);
-  
-  log.info("Clicking on Education new");
+	EducationPage ed=new EducationPage(driver);
+    log.info("Clicking on Education new");
    ed.getnewEducation().click();
    Thread.sleep(2000);
    

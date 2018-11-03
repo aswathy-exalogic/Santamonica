@@ -15,30 +15,31 @@ import resources.base;
 public class Course extends base{
 	public static Logger log =LogManager.getLogger(base.class.getName());
 	@BeforeTest
-	public void initialize() throws IOException
+	public void initialize() throws IOException, InterruptedException
 	{
 
 		 driver =initilizeDriver();
 		 log.info("Driver is initialized");
 		 driver.get(prop.getProperty("url"));
 		 log.info("Navigated to validateEducation page");
+		 longinTest();
+		 log.info("LoggedIn successfully");
+		 Thread.sleep(2000);
+			
+		 Menu mn=new Menu(driver);
+		 log.info("Clicking on Setup");
+		 mn.getsetup().click();
+		 Thread.sleep(2000);
+		 mn.getAcademic().click();
+		 Thread.sleep(2000);
+	     CoursePage cp=new CoursePage(driver);
+	     cp.getCourseLink().click();
+	     Thread.sleep(2000);
 	}
-	@Test	
+	@Test(priority = 1, enabled=true)	
 		public void CreateCourse() throws IOException, InterruptedException
-		{
-		longinTest();
-		log.info("LoggedIn successfully");
-		Thread.sleep(2000);
-		
-	    Menu mn=new Menu(driver);
-	    log.info("Clicking on Setup");
-	    mn.getsetup().click();
-	    Thread.sleep(2000);
-	    mn.getAcademic().click();
-	    Thread.sleep(2000);
+	   {
        CoursePage cp=new CoursePage(driver);
-       cp.getCourseLink().click();
-       Thread.sleep(2000);
        cp.getCourseNew().click();
        Thread.sleep(2000);
        Select s=new Select(cp.getSelectedudropdown());

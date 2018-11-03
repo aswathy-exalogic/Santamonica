@@ -1,8 +1,5 @@
-16:21:55.928 [main] INFO  resources.base - Driver is initialized
-16:22:06.145 [main] INFO  resources.base - Navigated to validateEducation page
-16:22:15.457 [main] INFO  resources.base - LoggedIn successfully
-16:22:17.459 [main] INFO  resources.base - Clicking on Setup
-16:22:40.820 [main] INFO  resources.base - Driver is initialized
-16:22:45.441 [main] INFO  resources.base - Navigated to validateTitle page
-16:22:45.497 [main] INFO  resources.base - Successfully validated Text message
-16:22:45.497 [main] INFO  resources.base - Test Completed
+14:49:56.680 [main] INFO  resources.base - Education deleted Successfully ,toaster msg is shown
+14:50:48.276 [main] INFO  resources.base - Driver is initialized
+14:50:53.669 [main] INFO  resources.base - Navigated to validateEducation page
+14:51:01.453 [main] INFO  resources.base - LoggedIn successfully
+14:51:03.455 [main] INFO  resources.base - Clicking on Setup

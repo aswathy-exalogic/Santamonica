@@ -1,0 +1,6 @@
+14:49:41.949 [main] INFO  resources.base - Education created Successfully , toaster message is shown
+14:49:43.961 [main] INFO  resources.base - Clicking on Edit Education button
+14:49:48.150 [main] INFO  resources.base - updating the Education field
+14:49:50.253 [main] INFO  resources.base - Clicking on updateEducation button
+14:49:50.393 [main] INFO  resources.base - Education updated Successfully ,Toaster msg is shown
+14:49:54.406 [main] INFO  resources.base - Clicking on delete education button
